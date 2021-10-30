@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Assignment 1 
+        </title>
+    </head>
+    <body>
+     <center><p><h1>A Method for Fragment Allocation Design<br>in the Distributed Database Systems</h1>
+           <br> smail O. Hababeh, UGRU, E-mail:<a href="www.google.com"> Ismail.Hababeh@uaeu.ac.ae</a><br> U.A.E University, Al-Ain, P.O.Box 17172, U.A.E
+           <br>Nicholas Bowring, Muthu Ramachandran<br>
+           <i> Faculty of Information and Engineering Systems - School of Computing<br> Leeds Metropolitan University<br>
+            Leeds - LS6 3QS, U.K</i></p></center><br>
+       <center> <h3>Abstract</h3></center>
+        <center> <p>The fragment allocation design is an essential issue that improves the performance of<br>
+                the applications processing in the Distributed Database systems <b>(DDBs)</b>. The database<br>
+                queries access the applications on the distributed database sites and should be performed<br>
+                effectively. Therefore, the fragments that accessed by queries are needed to be allocated<br>
+                to the DDBs sites so as to reduce the communication cost during the applications<br>
+                execution and handle their operational processing.</p></center><br>
+                <h2>1.INTRODUCTION</h2>
+                <p > Various approaches have already been described the data allocation technique in distributed systems. Some
+                    methods are limit in their theoretical and implementation parts. Other strategies are ignoring the
+                    optimization of the transaction response time. The other approaches present exponential time of complexity
+                    and test their performance on specific types of network connectivity.
+                    The design of the DDBs enhances the performance of applications by minimizing the amount of irrelevant
+                    data accessed by the applications [1], and by minimizing the amount of data transferred in processing the
+                    applications [2]. There are two ways by which the performance of applications can be enhanced: grouping
+                    sites and fragment allocation. Grouping sites of DDBs holds relevant data accessed by an application into a
+                    group of sites.<b>Fragment allocation is the process of placing the fragments at the sites of DDBs to minimize
+                    the data transfer cost and the number of messages during the applications processing </b></p>
+                    <h2>2.BACKGROUND</h2>
+     <P>Several approaches have been proposed for database partitioning and fragment allocations in DDBs. Son J.
+        et al. [3] have introduced an adaptable vertical partitioning method in distributed systems. Yee W. et al. [4]
+        proposed a method of grouping fragments based on a measure of inter-client sharing, which describes how
+        many fragments each client’s subscription has in common with those of others Chun-Hung C. et al. [5] have explored the use of a genetic search -based clustering algorithm for
+        data partitioning to achieve high database retrieval performance. They formulate the clustering
+        problem in data partitioning as a Travelling Salesman Problem (TSP) and propose 2 genetic
+        operators SE and SP, as well as modified version of ER operators to solve the associated (TSP). A
+        vertical partitioning technique is used in their algorithm, and they show that their model is applied
+        to solve the horizontal partitioning problem.
+    </P>
+    <h2>3.FRAGMENT ALLOCATION</h2>
+    <p>
+ To determine the fragment allocation at the <b>DDBs</b> clusters, we propose a new method developed from our
+approach (Hababeh I. et al. [13]) and based on the data allocation and query processing cost functions that
+find out precisely whether the fragment is allocated to or omitted from the cluster. This method attempts to
+minimize the communication costs by distributing the global database over the sites and increasing
+availability and reliability where multiple copies of the same data are allocated</p>
+<h3>Types of Allocation</h3>
+<ol>
+    <li>horizental fregmentation</li>
+    <li>vertical alocation</li>
+    <li>hybride allocation</li>
+</ol>  
+<h4>Table.1 Communication costs between DDBs sites</h4>
+<table>
+    <tr>
+        <th>site#</th>
+        <th>S1</th>
+    </tr>
+</table>
+</body>
+</html>

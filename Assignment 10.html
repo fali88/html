@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<body>
+<head>
+<title>web.com</title>
+</head> 
+<body >
+    <br><br>
+  <font size="6">  <h1 align="center">Form in Table</h1></font>
+  <!-- field set tage show the boundary around the form -->
+  <fieldset  >
+    <font size="4">
+  <table border="0" align="center"  width="500" height="400" bgcolor="skyblue" >
+  <form>
+    <!-- Type attribute with <input> determine which kind of value you enter  -->
+    <tr>
+        <td><label>Enter First Name:</label></td>
+        <td><input  type="text" name="sname" size="25" maxlenght="14" placeholder="Enter Your First Name here" height="3vw"></td>
+    </tr>
+    <tr>
+        <!-- name attribute uniquely identiy each controle on webpage and that tells the server which value belong to which controle -->
+        <td><label> Enter Last Name:</label></td>
+        <td><input  type="text" name="fname" size="25" maxlenght="14" placeholder="Enter Your Last Name here" ></td>
+    </tr>
+    <tr>
+        <!-- size determine the width of the box in which data is written or maxlenght indicate the  limit of the number a user can enter in the text field -->
+         <!-- it indicate the value send to the server that is selected -->
+        <td><label>Select your Gender:</label></td>
+        <td><input  type="radio" name="gender" value="male"> Male <input  type="radio" name="gender" value="female"> Female
+            <input type="radio"  name="gender" value="other">other</td>
+    </tr>
+    <tr>
+        <td><label>Enter your Address:</td>
+            <td><input  type="text" name="address" placeholder="Address here" size="25" maxlength="14"></td>
+    </tr>
+    <tr>
+        <td><label>Enter E-mail  Address:</td>
+        <td><input  type="e-mial" name="Email" placeholder="abc@gmail.com" size="25" maxlength="14"></td>
+    </tr>
+    <tr>
+         <!-- Password type except the character that are hidden -->
+        <td><label>Enter Your  Password:</label></td>
+        <td><input  type="password" name="Pword" placeholder="password" size="25" maxlength="14" ></td>
+    </tr>
+    <tr>
+        <td><label>Enter Your Date of Birth:</label></td>
+        <td> <input  type="date" name="D.O.B" size="25"  ></td>
+    </tr>
+    <tr>
+        <td><label>I agree to the terms and condition</label></td>
+        <td><input type="checkbox"></td>
+    </tr>
+    <tr>
+        <!-- Submit button is used to send the form to the server -->
+        <td></td>
+        <td><input type="button" name="formsubmit" value="Submit"></td>
+    </tr>
+
+</form>
+
+
+</table>
+</font>
+</body>

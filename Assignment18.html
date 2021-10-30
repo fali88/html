@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>web.com</title>
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+     <div id="box">
+         <h2 >APRIL 10 2020</h2><br>
+         <h1>It's GROUPING SITES!</h1>
+         <br>
+         <p class="p1">
+            Grouping sites (clustering) is a method of grouping sites according to a certain criteria to increase the system I/O<br> performance and reduce storage overheads.Grouping sites into clusters helps in reducing the 
+            communication costs<br> between the sites during the process of data allocation.We proposed a method for a clustering sites according to their communication cost, which determines whether or not a set of sites is assigned
+            to a certain cluster, and  it considered<br> as a fast way to determine the data allocation to a set of sites rather than site by site.
+         </p><br>
+         <p class="p2">
+            Two sites (Si,Sj) are grouped in one cluster if the communication cost between them is less than or
+            equal to a Communication Cost Range (CCR); the number of communication units which is allowed
+            for the maximum diffe-<br>rence of the communication cost between the sites to be grouped in the same
+            cluster, this number is determined<br> by the network of the DDBs (Hababeh I. et al. [12]). Following is
+            the definition of our clustering algorithm:Input:<br>Sites communication cost matrix CCR value The sites of DDBs
+            Output: the set of clusters and their respective sites
+         </p><br>
+         <p class="p2">
+       Grouping sites into clusters minimizes the communication costs bet ween the sites and improves the
+       system<br> performance. The average communication cost between clusters and sites, and the average
+       number of retrievals<br> and updates are considered in the computations of our fragment allocation method
+       because the processing time<br> needed for average computations is less than the processing time when
+       other techniques are used which depend,<br> on sorting sites according to specific fields. The system
+       performance is enhanced by removing (cancel) the redundant fragments from the database clusters and
+       by increasing availability and reliability where multiple copies of the same fragment are allocated, this
+       will reduce the communication costs where the fragments are needed frequently
+          </p><br>
+          <hr style="margin-left: 4%; margin-right: 4%;"color="skyblue">
+          <br>
+          <h2 >JUNE 16 2020</h2><br> 
+          <h1>FRAGMENT ALLOCATION</h1>
+          <br>
+           <p class="p1">
+            To determine the fragment allocation at the DDBs clusters, we propose a new method developed from our<br>
+            approach (Hababeh I. et al. [13]) and based on the data allocation and query processing cost functions that<br>
+            find out precisely whether the fragment is allocated to or omitted from the cluster. This method attempts to<br>
+            minimize the communication costs by distributing the global database over the sites and increasing
+            availability<br> and reliability where multiple copies of the same data are allocated.
+            </p><br>
+            <p class="p2">
+                Initially, fragments are allocated to all clusters having applications using that fragments, and the decision
+                value<br> (D) of allocating a fragment to a cluster is computed as a logical value for the difference bet ween the
+                cost of not<br> allocating the fragment to the cluster and the cost of allocating the fragment to the cluster. If the
+                Cost of Not Allo-<br>cating the fragment to the cluster (the fragment handled remotely) is greater than or equal
+                to the Cost of Allocating<br> the fragment to the cluster then the decision value is True and the fragment is
+                allocated to the cluster, and If the<br> cost of not allocating the fragment to the cluster is less than the cost of
+                allocating the fragment to the cluster then the decision value is False and the fragment is cancelled from the
+                cluster.
+            </p><br>
+            <p class="p2">
+                We illustrate our fragment allocation method in the following example, in which we propose the fragments
+                and<br> their number of frequencies of retrieval and update requested from each cluster and its res pective sites
+                (table 4),<br> the costs of space, retrieval, and update (table 5), and the following number of bytes which
+                required for the compu-<br>tation of the update and retrieval ratios according to their use in the DDBs: 2 bytes in
+                each unit of retrieval, 3 bytes<br> in each unit of update, and 5 bytes in each unit of communication.Clustering method is developed to group the
+                sites<br> into clusters, which helps in reducing the communication costs between the sites during allocation
+                process. 
+            </p>
+     </div>
+    </body>
+    </html>
